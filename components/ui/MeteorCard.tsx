@@ -6,7 +6,7 @@ export function MeteorCard() {
     <div className="">
       <div className="w-full h-[30rem] relative ">
         <div className="absolute inset-0 h-full w-full  transform scale-[0.80]  rounded-full blur-3xl" />
-        <div className="relative shadow-xl  border border-neutral-950  px-4 py-8 h-full w-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+        <div className="relative shadow-xl bg-[#101010] border border-neutral-950  px-4 py-8 h-full w-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
           <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"

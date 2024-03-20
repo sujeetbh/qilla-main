@@ -7,7 +7,7 @@ const Attack = () => {
       title: "Denial of Service",
       value: "denial-of-service",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 bg-[#1d1c20] border-white/5 flex items-center justify-between">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 bg-[#101010] border-white/5 flex items-center justify-between">
           <p className='text-xl md:text-2xl font-bold text-white mb-4'>
             Making NFT data unavailable: This is when an attacker prevents access to NFT data, making it impossible for users to interact with their NFTs.
           </p>
@@ -18,7 +18,7 @@ const Attack = () => {
       title: "Wash Trading",
       value: "wash-trading",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 bg-[#1d1c20] border-white/5 flex items-center justify-between">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 bg-[#101010] border-white/5 flex items-center justify-between">
           <p className='text-xl md:text-2xl font-bold text-white mb-4'>
             Wash trading: This is a deceptive practice where an attacker uses multiple self-addresses to manipulate the market and create a false impression of high trading volume.
           </p>
@@ -29,7 +29,7 @@ const Attack = () => {
       title: "Spoofing",
       value: "spoofing",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 bg-[#1d1c20] border-white/5 flex items-center justify-between">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 bg-[#101010] border-white/5 flex items-center justify-between">
           <p className='text-xl md:text-2xl font-bold text-white mb-4'>
             Spoofing by copying asset: This is when an attacker duplicates an NFT and tries to sell it as the original, deceiving potential buyers.
           </p>
@@ -40,7 +40,7 @@ const Attack = () => {
       title: "NFT Minting",
       value: "nft-minting",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  bg-[#1d1c20] border-white/5 flex items-center justify-between">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10  bg-[#101010] border-white/5 flex items-center justify-between">
           <p className='text-xl md:text-2xl font-bold text-white mb-4'>
             NFT minting on the same blockchain but different marketplaces: This is when an attacker mints an NFT on one marketplace and then registers it on another, potentially leading to confusion or deception.
           </p>
@@ -51,7 +51,7 @@ const Attack = () => {
       title: "Impersonation",
       value: "impersonation",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 bg-[#1d1c20] border-white/5 flex items-center justify-between">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 bg-[#101010] border-white/5 flex items-center justify-between">
           <p className='text-xl md:text-2xl font-bold text-white mb-4'>
             Attacker hacks social media platforms and impersonates a creator: This is when an attacker impersonates a legitimate NFT creator on social media platforms to deceive potential buyers.
           </p>

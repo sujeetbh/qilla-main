@@ -56,7 +56,7 @@ export const TextRevealCard = ({
       onMouseMove={mouseMoveHandler}
       ref={cardRef}
       className={cn(
-        "bg-[#1d1c20] border border-white/[0.08] rounded-3xl p-8 relative overflow-hidden",
+        "bg-[#101010] border border-white/[0.08] rounded-3xl p-8 relative overflow-hidden",
         className
       )}
     >
@@ -78,13 +78,13 @@ export const TextRevealCard = ({
                 }
           }
           transition={isMouseOver ? { duration: 0 } : { duration: 0.4 }}
-          className="absolute bg-[#1d1c20] z-20  will-change-transform"
+          className="absolute bg-[#101010] z-20  will-change-transform"
         >
           <p
             style={{
               textShadow: "4px 4px 15px rgba(0,0,0,0.5)",
             }}
-            className="text-base sm:text-[4rem] py-10 font-bold text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300"
+            className="text-base sm:text-[4rem] py-10 font-bold text-white bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 via-neutral-100 to-neutral-700"
           >
             {revealText}
           </p>

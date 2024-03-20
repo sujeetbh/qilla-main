@@ -21,7 +21,7 @@ import {
 const FeatureGrid = () => {
   return (
     <div className='grid grid-cols-4 row-auto container mx-auto gap-x-6 gap-y-6'>
-      <Card className='rounded-3xl bg-[#1d1c20] border-white/5 p-8'>
+      <Card className='rounded-3xl bg-[#101010] border-white/5 p-8'>
           <CardHeader className='p-0'>
             <CardTitle className='text-xl mb-2 font-semibold'>Three Way Matching</CardTitle>
           </CardHeader>
@@ -34,7 +34,7 @@ const FeatureGrid = () => {
             </div>
           </CardContent>
       </Card>
-      <div className='rounded-3xl bg-[#1d1c20] border-white/5 col-span-2 row-span-1'>
+      <div className='rounded-3xl border-white/5 col-span-2 row-span-1'>
         <TextRevealCard
           text="Unsecured NFTs"
           revealText="Secure with Qilla"
@@ -47,7 +47,7 @@ const FeatureGrid = () => {
           </TextRevealCardDescription>
         </TextRevealCard>
       </div>
-      <Card className='rounded-3xl bg-[#1d1c20] border-white/5 p-8'>
+      <Card className='rounded-3xl bg-[#101010] border-white/5 p-8'>
           <CardHeader className='p-0'>
             <CardTitle className='text-xl mb-2 font-semibold'>Platform Independent</CardTitle>
           </CardHeader>
@@ -60,7 +60,7 @@ const FeatureGrid = () => {
             </div>
           </CardContent>
       </Card>
-      <Card className='rounded-3xl bg-[#1d1c20] border-white/5 p-8 col-span-2'>
+      <Card className='rounded-3xl bg-[#101010] border-white/5 p-8 col-span-2'>
           <CardHeader className='p-0'>
             <CardTitle className='text-xl mb-2 font-semibold'>NFT World</CardTitle>
           </CardHeader>
@@ -73,7 +73,7 @@ const FeatureGrid = () => {
             </div>
           </CardContent>
       </Card>
-      <Card className='rounded-3xl bg-[#1d1c20] border-white/5 p-8 col-span-2'>
+      <Card className='rounded-3xl bg-[#101010] border-white/5 p-8 col-span-2'>
           <CardHeader className='p-0'>
             <CardTitle className='text-xl mb-2 font-semibold'>Tracking and Trading</CardTitle>
           </CardHeader>
