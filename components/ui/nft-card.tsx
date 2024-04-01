@@ -1,8 +1,6 @@
 'use client'
 import React from 'react'
-import Image from 'next/image'
 import { Button } from './button'
-import { Card, CardFooter } from './card'
 
 type NFTCardProps = {
   image: string
@@ -12,8 +10,8 @@ type NFTCardProps = {
 
 const NFTCARD = ({ image, title, description } : NFTCardProps) => {
   return (
-    <div className='rounded-[20px] bg-[#101010]'>
-      <Image src={image} alt='nft' width={340} height={300} className='rounded-t-[20px]' />
+    <div className='rounded-[20px] bg-[#101010] flex-shrink-0'>
+      <img src={image} alt='nft' className='rounded-t-[20px] w-full h-[300px]' />
       <p className='font-bold p-4 tracking-wide'>
         {title}
       </p>

@@ -20,7 +20,7 @@ import {
 
 const FeatureGrid = () => {
   return (
-    <div className='grid grid-cols-4 row-auto container mx-auto gap-x-6 gap-y-6'>
+    <div className='grid grid-cols-1 md:grid-cols-4 row-auto container mx-auto md:gap-x-6 gap-y-6'>
       <Card className='rounded-3xl bg-[#101010] border-white/5 p-8'>
           <CardHeader className='p-0'>
             <CardTitle className='text-xl mb-2 font-semibold'>Three Way Matching</CardTitle>

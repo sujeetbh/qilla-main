@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
 import { headers } from 'next/headers'
 import { cookieToInitialState } from 'wagmi'
+import { Toaster } from "@/components/ui/sonner";
 
 import { config } from '@/config'
 import { ContextProvider } from '@/context'
@@ -34,6 +35,7 @@ export default function RootLayout({
             <ContextProvider initialState={initialState}>
               <Navbar />
               {children}
+              <Toaster />
             </ContextProvider>
           </ThemeProvider>
       </body>

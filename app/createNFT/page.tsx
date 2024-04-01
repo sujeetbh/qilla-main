@@ -12,6 +12,7 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Upload } from 'lucide-react';
 import Image from 'next/image';
+import { toast } from 'sonner';
 
 const createNFT = () => {
     const [selectedFile, setSelectedFile] = useState<string | null>(null);
@@ -35,10 +36,15 @@ const createNFT = () => {
           console.error('Error reading file:', error);
           // Handle the error gracefully, e.g., display an error message to the user
         };
-  
         reader.readAsDataURL(file);
       }
     };
+
+    const onSubmit = (data: z.infer<typeof formSchema>) => {
+      console.log('NFT created successfully')
+      form.reset()
+    }
+    
   
     return (
       <div className="min-h-screen flex flex-col">
@@ -51,7 +57,7 @@ const createNFT = () => {
             information
           </p>
           <Form {...form}>
-            <form>
+            <form onSubmit={form.handleSubmit(onSubmit)}>
               <div className="flex flex-col xl:flex-row gap-10 items-start">
                 <div className="h-[420px] w-full xl:w-[540px] mt-4 cursor-pointer">
                   <Label
@@ -154,6 +160,7 @@ const createNFT = () => {
   
                   <div className='flex gap-4'>
                     <Button
+                      type='submit'
                       size="lg"
                       className="bg-gradient-to-tl 
                     from-blue-600 

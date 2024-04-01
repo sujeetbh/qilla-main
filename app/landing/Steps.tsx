@@ -14,7 +14,7 @@ const Steps = () => {
       <p className='text-xl mt-6 max-w-[28em] text-neutral-300'>
         Join a fast-growing community of creators, collectors, and developers building the future of NFTs. By following these simple steps, you can start your journey with Qilla.
       </p>
-      <div className='grid grid-cols-3 mt-12 gap-10 mb-20'>
+      <div className='grid grid-cols-1 sm:grid-cols-3 mt-12 gap-10 mb-20'>
         <StepText>Create a digital wallet: This is where you'll store your cryptocurrencies and NFTs.</StepText>
         <StepText>Top up your wallet: After creating your wallet, you'll need to add funds to it.</StepText>
         <StepText>Mint your NFT: This involves creating a unique digital asset that can be bought, sold, or traded on the blockchain.</StepText>
