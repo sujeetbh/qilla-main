@@ -13,7 +13,7 @@ import { fetchFeatureData } from '../(protectedRoutes)/_actions/featureSection/g
 const FeatureGrid = async() => {
   const featureData = await fetchFeatureData();
   return (
-    <div className='grid grid-cols-1 md:grid-cols-4 row-auto container mx-auto md:gap-x-6 gap-y-6'>
+    <div className='grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 row-auto container mx-auto md:gap-x-6 gap-y-6'>
       {featureData?.map((feature, index): any => {
           if(index === 1) {
             return (
