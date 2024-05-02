@@ -3,6 +3,7 @@ import { SparklesCore } from '@/components/ui/sparkles'
 import React from 'react'
 import FeatureGrid from './FeatureGrid'
 
+
 const About = () => {
   return (
     <div className='flex items-center flex-col justify-center'>

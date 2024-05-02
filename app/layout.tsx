@@ -3,13 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
-import { headers } from 'next/headers'
-import { cookieToInitialState } from 'wagmi'
-import { Toaster } from "@/components/ui/sonner";
-
-import { config } from '@/config'
-import { ContextProvider } from '@/context'
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,7 +15,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const initialState = cookieToInitialState(config, headers().get('cookie'))
+
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -32,11 +25,8 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <ContextProvider initialState={initialState}>
               <Navbar />
               {children}
-              <Toaster />
-            </ContextProvider>
           </ThemeProvider>
       </body>
     </html>
