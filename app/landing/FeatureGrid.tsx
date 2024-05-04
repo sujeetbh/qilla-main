@@ -17,24 +17,43 @@ const FeatureGrid = async() => {
       {featureData?.map((feature, index): any => {
           if(index === 1) {
             return (
-              <div key={index} className='rounded-3xl border-white/5 col-span-2 row-span-1 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] bg-black'>
-                <TextRevealCard
-                  text="Unsecured NFTs"
-                  revealText="Secure with Qilla"
-                >
-                  <TextRevealCardTitle className='text-xl mb-2 font-semibold'>
+              <>
+                <div key={index} className='hidden lg:block rounded-3xl border-white/5 col-span-2 row-span-1 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] bg-black'>
+                  <TextRevealCard
+                    text="Unsecured NFTs"
+                    revealText="Secure with Qilla"
+                  >
+                    <TextRevealCardTitle className='text-xl mb-2 font-semibold'>
+                      {feature.title}
+                    </TextRevealCardTitle>
+                    <TextRevealCardDescription className='text-[15px]'>
+                      {feature.description}
+                    </TextRevealCardDescription>
+                  </TextRevealCard>
+                </div>
+                <CardContainer key={index} className={cn("inter-var block lg:hidden", index === 1 ? "lg:col-span-2" : "")}>
+                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full min-h-[19rem] rounded-3xl p-6 lg:p-8 border">
+                  <CardItem
+                    translateZ="50"
+                    className="text-xl font-bold text-neutral-600 dark:text-white mb-4"
+                  >
                     {feature.title}
-                  </TextRevealCardTitle>
-                  <TextRevealCardDescription className='text-[15px]'>
+                  </CardItem>
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className="text-neutral-500 text-[15px] max-w-sm mt-2 dark:text-neutral-400 leading-relaxed"
+                  >
                     {feature.description}
-                  </TextRevealCardDescription>
-                </TextRevealCard>
-              </div>
+                  </CardItem>
+                </CardBody>
+                </CardContainer>
+              </>
             )
           } else {
             return (
-              <CardContainer key={feature.id} className={cn("inter-var", index === 1 || index === 3 || index === 4 ? "col-span-2" : "")}>
-                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full min-h-[19rem] rounded-3xl p-8 border">
+              <CardContainer key={feature.id} className={cn("inter-var", index === 1 || index === 3 || index === 4 ? "lg:col-span-2" : "")}>
+                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full min-h-[19rem] rounded-3xl p-6 lg:p-8 border">
                   <CardItem
                     translateZ="50"
                     className="text-xl font-bold text-neutral-600 dark:text-white mb-4"
