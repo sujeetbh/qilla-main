@@ -21,7 +21,7 @@ export function Hero() {
   ,[])
 
   return (
-    <div className="h-[calc(100vh-70px)] w-screen flex flex-col items-center justify-center overflow-hidden rounded-md z-20">
+    <div className="min-h-[calc(100vh-70px)] w-screen flex flex-col items-center justify-center rounded-md z-20">
       <Spotlight className="left-0"/>
       <h1 className="relative max-w-[678px] text-5xl sm:text-6xl md:text-8xl text-neutral-300 text-center font-sans font-bold bg-clip-text text-transparent bg-gradient-to-r from-neutral-100 via-neutral-200 to-neutral-500">
         {heroValue && heroValue[0] ? heroValue[0].title : heroData.title}

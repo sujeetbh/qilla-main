@@ -4,10 +4,10 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export const sendEmail = async (formData: FormData) => {
+export const sendEmail = async (formData: any) => {
 
-  const message = formData.get('query') as string;
-  const email = formData.get('email') as string;
+  const message = formData.query;
+  const email = formData.email;
 
   if(!message || !email || typeof message !== 'string' || typeof email !== 'string') {
     return { error: 'Invalid Message', success: false}

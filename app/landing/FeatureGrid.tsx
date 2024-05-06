@@ -31,7 +31,7 @@ const FeatureGrid = async() => {
                     </TextRevealCardDescription>
                   </TextRevealCard>
                 </div>
-                <CardContainer key={index} className={cn("inter-var block lg:hidden", index === 1 ? "lg:col-span-2" : "")}>
+                <CardContainer key={index + 1} className={cn("inter-var block lg:hidden", index === 1 ? "lg:col-span-2" : "")}>
                 <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full min-h-[19rem] rounded-3xl p-6 lg:p-8 border">
                   <CardItem
                     translateZ="50"
@@ -52,7 +52,7 @@ const FeatureGrid = async() => {
             )
           } else {
             return (
-              <CardContainer key={feature.id} className={cn("inter-var", index === 1 || index === 3 || index === 4 ? "lg:col-span-2" : "")}>
+              <CardContainer key={index} className={cn("inter-var", index === 1 || index === 3 || index === 4 ? "lg:col-span-2" : "")}>
                 <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full min-h-[19rem] rounded-3xl p-6 lg:p-8 border">
                   <CardItem
                     translateZ="50"
