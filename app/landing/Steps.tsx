@@ -8,12 +8,13 @@ const Steps = async () => {
       <header>
         <h2 
           className='
-            text-6xl 
+            text-4xl
+            md:text-6xl 
             tracking-tighter
             leading-tight
             font-bold max-w-[40rem]'>A fast-growing,global community</h2>
       </header>
-      <p className='text-xl mt-6 max-w-[28em] text-neutral-300'>
+      <p className='text-lg md:text-xl mt-6 max-w-[28em] text-neutral-300'>
         Join a fast-growing community of creators, collectors, and developers building the future of NFTs. By following these simple steps, you can start your journey with Qilla.
       </p>
       <div className='grid grid-cols-1 sm:grid-cols-3 mt-12 gap-10 mb-20'>

@@ -34,7 +34,7 @@ export const featureData = [
     description: "The world of NFTs is a vast and ever-changing landscape. Qilla is here to help you navigate it with ease and security.",
   },
   {
-    id: 5,
+    id: 6,
     title: "Tracking and Trading",
     description: "Enables secure tracking and trading of assets across multiple marketplaces and blockchains.",
   }

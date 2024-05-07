@@ -40,7 +40,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "flex flex-shrink-0 items-center sm:justify-center lg:justify-start mx-4 lg:mx-6 md:[perspective:1000px] relative overflow-auto md:overflow-visible no-visible-scrollbar w-full",
           containerClassName
         )}
       >
@@ -52,7 +52,7 @@ export const Tabs = ({
             }}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn("relative px-5 py-4 rounded-[20px]", tabClassName)}
+            className={cn("relative flex flex-shrink-0 px-5 py-2 md:py-4 rounded-[20px]", tabClassName)}
             style={{
               transformStyle: "preserve-3d",
             }}
@@ -68,7 +68,7 @@ export const Tabs = ({
               />
             )}
 
-            <span className="relative block text-black dark:text-white">
+            <span className="relative text-black dark:text-white flex-1 flex-shrink-0">
               {tab.title}
             </span>
           </button>
@@ -79,7 +79,7 @@ export const Tabs = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("mt-14", contentClassName)}
+        className={cn("mt-8 md:mt-14", contentClassName)}
       />
     </>
   );
@@ -100,14 +100,14 @@ export const FadeInDiv = ({
     return tab.value === tabs[0].value;
   };
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-[310px] md:w-[720px] lg:w-[980px] xl:w-full h-full mx-auto flex flex-shrink">
       {tabs.map((tab, idx) => (
         <motion.div
           key={tab.value}
           layoutId={tab.value}
           style={{
             scale: 1 - idx * 0.1,
-            top: hovering ? idx * -40 : 0,
+            top: hovering ? idx * -10 : 0,
             zIndex: -idx,
             opacity: idx < 3 ? 1 - idx * 0.1 : 0,
           }}
