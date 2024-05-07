@@ -69,8 +69,11 @@ const ContactForm = () => {
     const { success } = await sendEmail(data);
     if(!success) {
       toast.error('Failed to send email');
+    } else {
+      toast.success('Email sent successfully');
+      form.resetField('email');
+      form.resetField('query');
     }
-    toast.success('Email sent successfully');
   };
 
   return (
