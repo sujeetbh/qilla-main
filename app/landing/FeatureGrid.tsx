@@ -20,7 +20,7 @@ const FeatureGrid = async() => {
               <div key={index} className='rounded-3xl border-white/5 col-span-2 row-span-1 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] bg-black'>
                 <TextRevealCard
                   text="Unsecured NFTs"
-                  revealText="Secure with Qilla"
+                  revealText="Secure with plusChain"
                 >
                   <TextRevealCardTitle className='text-xl mb-2 font-semibold'>
                     {feature.title}
