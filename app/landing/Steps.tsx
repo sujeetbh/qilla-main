@@ -14,7 +14,7 @@ const Steps = async () => {
             font-bold max-w-[40rem]'>A fast-growing,global community</h2>
       </header>
       <p className='text-xl mt-6 max-w-[28em] text-neutral-300'>
-        Rapidly Evolving Landscape NFT World replace 
+        Rapidly Evolving Landscape 
         plusChain helps you navigate it with ease and security
 
       </p>
