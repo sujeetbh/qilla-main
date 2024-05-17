@@ -14,7 +14,9 @@ const Steps = async () => {
             font-bold max-w-[40rem]'>A fast-growing,global community</h2>
       </header>
       <p className='text-xl mt-6 max-w-[28em] text-neutral-300'>
-        Join a fast-growing community of creators, collectors, and developers building the future of NFTs. By following these simple steps, you can start your journey with Qilla.
+        Rapidly Evolving Landscape NFT World replace 
+        plusChain helps you navigate it with ease and security
+
       </p>
       <div className='grid grid-cols-1 sm:grid-cols-3 mt-12 gap-10 mb-20'>
         {stepData?.map((step, index) => (
