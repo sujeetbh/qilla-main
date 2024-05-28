@@ -11,12 +11,10 @@ const Steps = async () => {
             text-6xl 
             tracking-tighter
             leading-tight
-            font-bold max-w-[40rem]'>A fast-growing,global community</h2>
+            font-bold max-w-[40rem]'>plusChain is easy</h2>
       </header>
       <p className='text-xl mt-6 max-w-[28em] text-neutral-300'>
-        Rapidly Evolving Landscape 
-        plusChain helps you navigate it with ease and security
-
+        Using plusChain is as simple as this: 
       </p>
       <div className='grid grid-cols-1 sm:grid-cols-2 mt-12 gap-10 mb-20'>
         {stepData?.map((step, index) => (
