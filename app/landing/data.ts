@@ -26,16 +26,16 @@ export const featureData = [
   {
     id: 3,
     title: "Platform Independent",
-    description: "Can be deployed on any technology platform, with any cryptography stack and with centralized or decentralized databases.",
+    description: "plusChain can be deployed on any technology platform and any cryptography stack.",
   },
   {
     id: 5,
-    title: "NFT World",
-    description: "The world of NFTs is a vast and ever-changing landscape. Qilla is here to help you navigate it with ease and security.",
+    title: "Rapidly Evolving Landscape",
+    description: "plusChain helps you navigate it with ease and security.",
   },
   {
     id: 5,
     title: "Tracking and Trading",
-    description: "Enables secure tracking and trading of assets across multiple marketplaces and blockchains.",
+    description: "plusChain enables secure tracking and trading across diverse trading platforms and blockchains.",
   }
 ]
