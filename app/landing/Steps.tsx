@@ -18,7 +18,7 @@ const Steps = async () => {
         plusChain helps you navigate it with ease and security
 
       </p>
-      <div className='grid grid-cols-1 sm:grid-cols-3 mt-12 gap-10 mb-20'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 mt-12 gap-10 mb-20'>
         {stepData?.map((step, index) => (
           <StepText key={step.id} index={index}>{step.step}</StepText>
         ))}
