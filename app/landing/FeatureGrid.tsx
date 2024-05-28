@@ -17,7 +17,7 @@ const FeatureGrid = async() => {
       {featureData?.map((feature, index): any => {
           if(index === 1) {
             return (
-              <div key={index} className='rounded-3xl border-white/5 col-span-3 row-span-1 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] bg-black'>
+              <div key={index} className='rounded-3xl border-white/5 col-span-2.5 row-span-1 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.2] bg-black'>
                 <TextRevealCard
                   text="Unsecured tokens"
                   revealText="Secure with plusChain"
