@@ -1,8 +1,8 @@
 
 
 let HeroData = {
-  title: "",
-  subtitle: "Unleash the power of your NFT's with Qilla",
+  title: "Security Beyond Blockchain",
+  subtitle: "Blockchain security doesn’t suffice when your assets live off-chain - protect your tokenized assets with the assurance of plusChain and do more with them",
   description: "In PlusChain Technology",
   ButtonOne: "Watch the Journey",
   ButtonTwo: "Take expert advice",
