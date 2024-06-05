@@ -1,7 +1,7 @@
 
 
 let HeroData = {
-  title: "Security tool from the future",
+  title: "",
   subtitle: "Unleash the power of your NFT's with Qilla",
   description: "In PlusChain Technology",
   ButtonOne: "Watch the Journey",
