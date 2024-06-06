@@ -11,7 +11,7 @@ const Steps = async () => {
             text-6xl 
             tracking-tighter
             leading-tight
-            font-bold max-w-[40rem]'>plusChain is easy</h2>
+            font-bold max-w-[40rem]'>plusChain is easy!</h2>
       </header>
       <p className='text-xl mt-6 max-w-[28em] text-neutral-300'>
         Using plusChain is as simple as this: 
