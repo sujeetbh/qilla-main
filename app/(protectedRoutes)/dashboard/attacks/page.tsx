@@ -1,7 +1,7 @@
 import React from 'react'
 import AttackLayout from '@/components/dashboardUI/attack-layout'
 import { fetchAttackData } from '../../_actions/attackSection/getAttackData';
-import { auth } from '@/app/auth/login';
+import { auth } from '@/lib/auth';
 import { redirect } from 'next/navigation';
 
 const AttacksPage = async() => {
